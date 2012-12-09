@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Margin-bottom style</title>
+<style>
+body {
+    margin: 0;
+    padding: 0 10px;
+}
+p, h1, h2, .container {
+    margin: 10px 0;
+}
+.container {
+    border: 1px silver dashed;
+    background: whitesmoke;
+    padding: 10px;
+}
+.container-fixed p:first-child {
+    margin-top: 0;
+}
+.container-fixed p:last-child {
+    margin-bottom: 0;
+}
+</style>
+<h1>Naive approach</h1>
+<p>We give a container padding all the way around. </p>
+<div class="container">
+    <h1>Toptop</h1>
+    <p>This is a test of some elements.</p>
+    <p>Cool man</p>
+    <h2>Whats up</h2>
+    <p>That makes sense, for a
+minute. Then you discover it gives you a first-child/last-child problem.
+If the goal is to have 10px margins all the way around, you have to override
+things.</p>
+    <p>On the other hand if you want extra space top and bottom, go this way.</p>
+</div>
+<div class="container container-fixed">
+    <p>I want a 10px margin above.</p>
+    <p>Filler</p>
+    <p>And I want 10px below.</p>
+</div>

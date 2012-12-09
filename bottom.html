@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Margin-bottom style</title>
+<style>
+body {
+    margin: 0;
+    padding: 0 10px;
+}
+p, h1, h2, .container {
+    margin: 0 0 10px;
+}
+.container {
+    border: 1px silver dashed;
+    background: whitesmoke;
+    padding: 10px 10px 0;
+}
+</style>
+<h1>Margin-bottom-only regime</h1>
+<p>The idea here is that when every item has only bottom padding, you drop a lot
+of the complications of margin collapse, and overrides to bring items tight
+together are easy, requiring an override on only a single element.
+<p>Every container needs top padding. Note that the h1 above is hard against the
+top of the page.</p>
+<div class="container">
+    <h1>Toptop</h1>
+    <p>Container padding cannot be responsive to typographyical size.</p>
+    <p>Bummer.</p>
+    <h2>Whats up?</h2>
+</div>
+<div class="container"></div>
+<p> ^empty container has top padding, so it has some height.</p>
