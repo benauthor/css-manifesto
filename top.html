@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Margin-bottom style</title>
+<style>
+body {
+    margin: 0;
+    padding: 0 10px;
+}
+p, h1, h2, .container {
+    margin: 10px 0 0;
+}
+.container {
+    border: 1px silver dashed;
+    background: whitesmoke;
+    padding: 0 10px 10px;
+}
+</style>
+<h1>Margin-top-only regime</h1>
+<p>Why not flip the margin-bottom-only approach and do margin-top only. It seems
+somehow more ridiculous, even though it's the same idea.</p>
+<p>Now every container needs bottom padding.</p>
+<div class="container">
+    <h1>Toptop</h1>
+    <p>Looks about the same, except your odd tight margin is bottom rather
+    than top, and only appears when you scroll all the way down...</p>
+    <h2>Whats up?</h2>
+</div>
+<div class="container"></div>

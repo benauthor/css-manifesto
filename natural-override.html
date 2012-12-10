@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Margin-bottom style</title>
+<style>
+dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0 10px;
+}
+p, h1, h2, .container {
+    margin: 10px 0;
+}
+.sock {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.cap {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.container {
+    border: 1px silver dashed;
+    background: whitesmoke;
+    padding: 0 10px;
+}
+</style>
+<h1>Natural margins override</h1>
+<p>The fear expressed was that sometimes we want a tight group, and that's more
+    difficult. Unfortunately this clean-room example doesn't reflect the
+    difficulties we're having.</p>
+
+<dl class="widget container">
+    <dt><h1>Header</h1>
+    </dt>
+    <dd><p>Let's try to kill the space between the header and this.</p>
+    </dd>
+</dl>
+
+<dl class="widget container">
+    <dt><h1 class="sock">Header</h1>
+    </dt>
+    <dd><p class="cap">Like so.</p>
+    </dd>
+</dl>
+
+<!-- <dl class="widget container">
+    <dt>Header
+    </dt>
+    <dd>Some text
+    </dd>
+</dl> -->
